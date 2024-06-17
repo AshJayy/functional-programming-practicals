@@ -1,0 +1,13 @@
+# Metals
+.bloop/
+.metals/
+.bsp/
+.classpath
+project
+.settings/
+.vscode/
+
+# Scala
+target/
+.scala-build
+*.log
