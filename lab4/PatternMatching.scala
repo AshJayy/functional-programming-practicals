@@ -12,8 +12,22 @@ object PatternMatching {
             })
         }
     }
+    def getModThree(n: Int): Int = n % 3
+    def isMultipleThree(n: Int): Unit = {
+        if (n <= 0){
+            println("Negative/Zero")
+        }else{
+            if(getMod(n) == 1){
+                println("Is a multiple of 3")
+            }else{
+                println("Not a multiple of 3")
+            }
+        }
+    }
     def main (args: Array[String]): Unit = {
+        println("Enter a number")
         var input = readLine()
-        isOddEven(input.toInt)
+        // isOddEven(input.toInt)
+        isMultipleThree(input.toInt)
     }
 }
